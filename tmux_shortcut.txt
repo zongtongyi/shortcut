@@ -1,0 +1,47 @@
+Session 
+tmux new -s my_session_name           start session
+tmux a -t session_name                attach session
+tmux list-session                     list sessions
+tmux kill-session  -t session_name    kill session
+tmux switch -t session_name           switch to session
+tmux kill-server                      close tmux server
+prefix s                              check/transfer session
+prefix d                              detach session
+prefix $                              rename session
+prefix (                              prev session
+prefix )                              next session
+prefix L                              last used session
+prefix s                              choose session from list
+
+
+Window
+prefix c        new window
+prefix ,        rename window
+prefix &        close window
+prefix 1        switch windows
+prefix n        switch next pane
+prefix p        switch prev pane
+prefix w        list all windows and switch
+prefix f        search window by window_name
+prefix space    swtich pane to even-horizontal、even-vertical、main-horizontal、main-vertical、tiled
+
+
+Pane
+prefix "          verticle split pane
+prefix %          horizon split pane
+prefix x          close pane
+prefix arrow      switch between pane
+prefix ctl+arrow  resize between pane(1)
+prefix alt+arrow  resize between pane(5)
+prefix z          zoom pane biggest
+prefix alt+o      anticlockwise rotate pane
+prefix ctl+o      clockwise rotate pane
+prefix { / }      rotate left/right pane
+prefix o          switch next pane
+prefix q          show pane number
+
+
+Other
+prefix t        show a big timer
+prefix :        command model
+prefix ?        help (key bindings)
